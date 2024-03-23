@@ -10,7 +10,7 @@ resource "aws_sqs_queue" "terraform_queue" {
   })
 
   # encryption
-  sqs_managed_sse_enabled = false
+  sqs_managed_sse_enabled = true
 
   tags = {
     Environment = "dev"
